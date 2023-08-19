@@ -1,0 +1,80 @@
+html {
+  font-family: system-ui;
+}
+
+body {
+  background-image: url(img/Fondo-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.logo {
+  float: left;
+  padding: 5px 20px 0;
+  height: 150px;
+}
+
+#navegacion {
+  margin-bottom: auto;
+  width: 100%;
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+#Contenido {
+  top: 210px;
+  position: relative;
+}
+
+.card {
+  position: static;
+  margin-bottom: 10px;
+}
+
+#Carrito {
+  margin-left: 2%;
+  position: static;
+  background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+  padding: 10px;
+  height: 717px;
+}
+
+#boton-pagar a {
+  text-decoration: none;
+  color: white;
+}
+
+.img-fluid {
+  width: 600px;
+  height: 210px;
+}
+
+
+@media (max-width:1024px) {
+  .column-6 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width:768px) {
+  .column-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:480px) {
+  .column-6 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

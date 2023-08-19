@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+
+    background-image: url(img/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.logo {
+    float: left;
+    padding: 5px 20px 0;
+    height: 150px;
+}
+
+#navegacion {
+    margin-bottom: 20px;
+    width: 100%;
+    top: -15px;
+    z-index: 1;
+}
+
+.rating {
+    font-size: 38px;
+}
+
+#texto2 {
+    font-size: 28px;
+    margin-right: 15px;
+}
+
+.star {
+    cursor: pointer;
+    color: gray;
+}
+
+.highlight {
+    color: goldenrod;
+}
+
+#comment {
+    margin-top: 20px;
+}
+
+#commentText {
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+#Contenido {
+    border-radius: 10px;
+    background-color: #fffffff5;
+    margin-left: 11%;
+    padding: 30px;
+    width: 700px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+}
+
+.alert {
+    z-index: 999;
+    position: fixed;
+    top: 80%;
+    width: 96%;
+    left: 2%;
+}
+
+aside {
+    float: right;
+    height: 460px;
+    width: 300px;
+    margin-right: 11%;
+    margin-bottom: 30px;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    background-color: #fffffff5;
+}
+
+.icono {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+aside a {
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+}
