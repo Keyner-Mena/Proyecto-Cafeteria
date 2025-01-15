@@ -1,67 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafeteria & Repostería Brio</title>
+    <link rel="stylesheet" href="./Estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafeteria & Reposteria Brio</title>
-  <link rel="stylesheet" href="inicio/Estilos.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="img/icono1.ico" />
+  </head>
 
-  <link rel="icon" type="image/png" href="icono1.ico">
-
-</head>
-
-<body>
-
-  <header id="navegacion">
-
-
-    <nav class="navbar bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <img class="logo" src="Logo.png" alt="Logo">
-        <a id="Titulo" class="navbar-brand " href="#">Cafeteria & Reposteria Brio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-
-
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Secciones </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="menu/Menu.html">Menú</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="comentarios/Comentarios.html">Comentarios</a>
-              </li>
-            </ul>
-
+  <body>
+    <header id="navegacion">
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <img class="logo" src="img/Logo.png" alt="Logo" />
+          <a id="Titulo" class="navbar-brand" href="#"
+            >Cafeteria & Repostería Brio</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Secciones
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./menu/Menu.html">Menú</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./comentarios/Comentarios.html"
+                    >Comentarios</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-  </header>
+    <span id="Bienvenido">Bienvenido</span>
 
-  <span id="Bienvenido">Bienvenido</span>
-
-  <div class="d-grid gap-2 col-2 mx-auto">
-    <button id="Entrar" class="btn btn-light btn-lg" type="button"><a href="menu/Menu.html">Entrar</a></button>
-  </div>
-</body>
-
+    <div class="d-grid gap-2 col-2 mx-auto">
+      <button
+        id="Entrar"
+        class="btn btn-light btn-lg"
+        type="button"
+        onclick="location.href='./menu/Menu.html'"
+      >
+        Entrar
+      </button>
+    </div>
+  </body>
 </html>
