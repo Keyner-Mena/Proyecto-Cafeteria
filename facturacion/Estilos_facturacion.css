@@ -4,9 +4,8 @@ body {
 
 .logo {
   float: left;
-  padding: 5px 20px 0;
-  height: auto;
-  max-height: 150px;
+  padding: 5px 2%;
+  height: 150px;
 }
 
 #navegacion {
@@ -29,13 +28,8 @@ h1 {
   text-align: center;
 }
 
-.product-list {
-  margin-bottom: 20px;
-}
-
-.product-list label {
-  display: block;
-  margin-bottom: 5px;
+.form-label {
+  font-weight: 500;
 }
 
 .btn {
@@ -43,10 +37,17 @@ h1 {
   padding: 8px 12px;
   text-decoration: none;
   border-radius: 4px;
+  font-weight: 600 !important;
 }
 
 #payment-method {
   background-color: rgba(238, 238, 238, 0.752);
   border-radius: 20px;
   padding: 20px;
+}
+
+@media (max-width: 530px) {
+  .container {
+    width: 92% !important;
+  }
 }

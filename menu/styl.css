@@ -17,9 +17,9 @@ body {
 }
 
 .logo {
-  padding: 5px 20px 0;
-  height: auto;
-  max-height: 150px;
+  float: left;
+  padding: 5px 2%;
+  height: 150px;
 }
 
 #navegacion {
@@ -29,8 +29,18 @@ body {
   z-index: 1;
 }
 
+#products {
+  background-color: rgb(245 245 245);
+  position: absolute;
+  top: 160px;
+  width: 100%;
+  padding: 20px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
 #Contenido {
-  margin-top: 220px;
+  margin-top: 270px;
   width: 100%;
   max-width: 1300px;
 }
@@ -41,13 +51,24 @@ body {
   margin-right: 1%;
 }
 
+.btn {
+  font-weight: 600 !important;
+}
+
 #Carrito {
   margin: 0% auto;
+  margin-bottom: 10px;
   background-color: rgb(247, 247, 247);
   border-radius: 10px;
   padding: 9px;
-  max-height: 621px;
   overflow-y: auto;
+}
+
+.borrar {
+  margin: 1em !important;
+  margin-left: 0 !important;
+  font: -webkit-small-control;
+  display: flex;
 }
 
 #boton-pagar a {
@@ -61,13 +82,19 @@ body {
   border-radius: 7px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1315px) {
+  .card {
+    margin-left: 1%;
+  }
+}
+
+@media (max-width: 1056px) {
   .column-6 {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .card {
-    width: 40%;
+    width: 45% !important;
     margin-left: 3%;
   }
 }
@@ -78,18 +105,47 @@ body {
   }
 
   .card {
-    width: 90%;
-    margin-left: 3%;
+    margin-left: 4%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
+  .card {
+    margin-left: 6%;
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 575px) {
   .column-6 {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .card {
-    width: 100%;
-    margin-left: 3%;
+    margin-left: 6.5%;
+    margin-bottom: 1em;
+    width: 42% !important;
+  }
+
+  #Carrito {
+    width: 97%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .column-6 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    margin-left: 5%;
+    width: 95% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    margin-left: 6%;
   }
 }

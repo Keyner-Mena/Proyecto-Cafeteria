@@ -126,9 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
       miNodo.textContent = `(${numeroUnidadesItem}) ${miItem[0].nombre} - ${divisa}${miItem[0].precio}`;
       // Boton de borrar
       const miBoton = document.createElement("button");
-      miBoton.classList.add("btn", "btn-danger", "mx-5");
-      miBoton.textContent = "x";
-      miBoton.style.marginLeft = "1rem";
+      miBoton.classList.add("btn", "btn-danger", "mx-5", "borrar");
+      miBoton.textContent = "Quitar";
       miBoton.dataset.item = item;
       miBoton.addEventListener("click", borrarItemCarrito);
       // Mezclamos nodos

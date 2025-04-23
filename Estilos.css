@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(img/Fondo.png);
+  background-image: url(img/Fondo.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -66,17 +66,24 @@ header {
   padding: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   #Titulo {
-    display: none;
-  }
-  #Bienvenido {
-    font-size: 8vw;
+    visibility: hidden;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #Bienvenido {
-    font-size: 10vw;
+    font-size: 9vw;
+  }
+  .logo {
+    height: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn-lg {
+    font-size: 1em !important;
+    width: 40% !important;
   }
 }
