@@ -74,7 +74,7 @@ header {
 
 @media (max-width: 768px) {
   #Bienvenido {
-    font-size: 9vw;
+    font-size: 12vw;
   }
   .logo {
     height: 150px;

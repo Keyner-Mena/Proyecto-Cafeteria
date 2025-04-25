@@ -30,17 +30,21 @@ function realizarPago() {
     retiro.trim() != "" &&
     metodo_selecionado
   ) {
-    // Generar dos números aleatorios de 3 dígitos
-    var parte1 = generarNumeroAleatorio(100, 999);
-    var parte2 = generarNumeroAleatorio(100, 999); // Entre 100 y 999
+    if (retiro == 1) {
+      // Generar dos números aleatorios de 3 dígitos
+      var parte1 = generarNumeroAleatorio(100, 999);
+      var parte2 = generarNumeroAleatorio(100, 999); // Entre 100 y 999
 
-    // Mostrar el mensaje con el código generado
-    alert(
-      "Pago realizado con éxito! Su código para retirar: " +
-        parte1 +
-        "-" +
-        parte2
-    );
+      // Mostrar el mensaje con el código generado
+      alert(
+        "Pago realizado con éxito! Su código para retirar: " +
+          parte1 +
+          "-" +
+          parte2
+      );
+    } else {
+      alert("Pago realizado con éxito! Su pedido llegara pronto.");
+    }
 
     // Redirigir
     window.location.href = "../menu/Menu.html";
@@ -48,5 +52,5 @@ function realizarPago() {
     alert("Todos los campos son obligatorios.");
   }
 
-  // Aqui iria la logica para procesar el pago
+  // Resto de la logica para procesar el pago
 }

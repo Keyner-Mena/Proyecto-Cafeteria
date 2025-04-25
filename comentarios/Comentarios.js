@@ -26,15 +26,11 @@ function submitFeedback() {
 
   if (starSelected && commentText) {
     alerta.classList.add("alert", "alert-success");
-    alerta.textContent =
-      `Gracias por tu calificacion de ` +
-      Cantidad +
-      ` estrellas y tu comentario.`;
+    alerta.textContent = `Gracias por tu calificación y tus comentarios :)`;
   } else {
     if (starSelected) {
       alerta.classList.add("alert", "alert-success");
-      alerta.textContent =
-        `Gracias por tu calificación de ` + Cantidad + ` estrellas.`;
+      alerta.textContent = `Gracias por tu calificación!`;
     } else {
       alerta.classList.add("alert", "alert-danger");
       alerta.textContent = "Por favor selecciona una calificación.";
